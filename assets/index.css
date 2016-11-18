@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(222, 0, 0);
+}
+
+h1.top {
+  color: white;
+  font-family: comic book;
+  font-size: 46px;
+  margin: 1rem auto;
+  text-align: center;
+  -webkit-text-stroke: .5px black;
+}
+
+div.group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Book';
+}
+
+img.found {
+  border-radius: 100%;
+}
+
+img.not-found {
+  border-radius: 15px;
+}
+
+div.imgbox {
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  height: 255px;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 15px;
+  width: 255px;
+}
+
+div.imgbox:first-of-type {
+  margin-top: 0;
+}
+
+div.imgbox h1 {
+  align-self: flex-end;
+  color: white;
+  line-height: 17;
+  position: absolute;
+  -webkit-text-stroke: 1px black;
+}
+
+div.imgbox-unfound {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.imgbox-unfound h1 {
+  align-self: flex-end;
+  color: white;
+  line-height: 16;
+  position: absolute;
+  -webkit-text-stroke: 1px black;
+}
+
+
+hr {
+  align-self: stretch;
+  border-color: black;
+  margin-left: 0;
+  margin-right: 0;
+}
