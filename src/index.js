@@ -27,6 +27,10 @@ function newResults(e) {
     var page = (hits * ($('#page').val()));
   $.ajax({url: "https://gateway.marvel.com:443/v1/public/characters?series=1987%2C%20454%2C%2017285%2C%2020432&limit=" + hits+ "&offset="+ page + "&apikey=57557432956d182efac5d1ba594e0879", crossDomain: true}).then(function(characters) {
     var group = $('<div class="group"></div>');
+    console.log(characters.data.results.length === 0);
+    if (characters.data.results.length === 0) {
+      $(group).empty().append($('<h2></h2>').text('Page unavailable, try a lower number'));
+    }
     $.each(characters.data.results, function(i, charac) {
       var imgboxFound = $('<div class="imgbox"></div>')
       var imgboxUnfound = $('<div class="imgbox-unfound"></div>');
@@ -45,7 +49,9 @@ function newResults(e) {
       // group.append($('<hr>'));
     })
     $("#characters").empty().append(group);
-  }).catch();
+  }).catch(function() {
+    $("#characters").empty().append($('<h2></h2>').text('Page unavailable'));
+  });
 }
 
 $("#search-options").on("submit", newResults);
