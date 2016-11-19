@@ -10,6 +10,10 @@
       font-family: "Comic Book";
       src: url("assets/comic_book/ComicBook.otf");
     }
+    @font-face {
+      font-family: "Comic Book Bold";
+      src: url("assets/comic_book/ComicBookBold.otf");
+    }
   </style>
   <link rel="stylesheet" href="assets/index.css">
   <title>Document</title>
@@ -17,7 +21,14 @@
 
 <body>
 
-  <h1 class="top">MARVEL HEROES</h1>
+  <h1 class="top">The World of Spider-Man</h1>
+  <h2>Click a character for more info</h2>
+
+    <form id="search-options">
+      <input type="number" class="red" min="1" max="100" id="hits" placeholder="results per page (1-100)" />
+      <input type="number" class="red" min="1" id="page" placeholder="select a page" />
+      <input type="submit" class="hover" value="load results" />
+    </form>
 
   <div id="characters"></div>
 
