@@ -19,6 +19,7 @@ $(function() {
       // group.append($('<hr>'));
     })
     $("#characters").append(group);
+    $("#characters").append($('<h5></h5>').text(characters.attributionText));
   }).catch();
 
   function newResults(e) {
@@ -67,6 +68,7 @@ $(function() {
         // group.append($('<hr>'));
       })
       $("#characters").empty().append(group);
+      $("#characters").append($('<h5></h5>').text(characters.attributionText));
     }).catch(function() {
       $("#characters").empty().append($('<h2></h2>').text('Page unavailable'));
     });

@@ -111,10 +111,6 @@ div.imgbox-unfound h1 {
   -webkit-text-stroke: 1px black;
 }
 
-
-hr {
-  align-self: stretch;
-  border-color: black;
-  margin-left: 0;
-  margin-right: 0;
+h5 {
+  font-family: 'Comic Book';
 }
