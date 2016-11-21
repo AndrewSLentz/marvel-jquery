@@ -70,6 +70,10 @@ input {
   cursor: pointer;
 }
 
+.cp-spinner {
+  display: flex;
+  margin: 5rem auto;
+}
 
 div.group {
   align-items: center;
@@ -102,7 +106,8 @@ div.imgbox {
   width: 255px;;
 }
 
-div.imgbox, div.imgbox-unfound {
+div.imgbox,
+div.imgbox-unfound {
   cursor: alias;
 }
 
@@ -146,12 +151,13 @@ label {
 
 @media (max-width: 925px) {
   form {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
-  input, input.red {
-    width: 50%;
-    margin-top: .2rem;
+  input,
+  input.red {
     margin-bottom: .2rem;
+    margin-top: .2rem;
+    width: 50%;
   }
 }

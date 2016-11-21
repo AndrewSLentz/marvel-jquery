@@ -1,4 +1,13 @@
 $(function() {
+  $(document).ajaxStart(function(){
+    $("#characters").empty();
+    $("#attribution").empty();
+    $('.cp-spinner').show();
+  });
+  $(document).ajaxStop(function(){
+    $('.cp-spinner').hide();
+  });
+
   $.ajax({url: "https://gateway.marvel.com:443/v1/public/characters?series=1987%2C%2020432%2C%2020694%2C%20454%2C%2017285%2C%2020432%2C%201126%2C%202234%2C%203101&limit=50&apikey=57557432956d182efac5d1ba594e0879", crossDomain: true}).then(function(characters) {
     var group = $('<div class="group"></div>');
     $.each(characters.data.results, function(i, charac) {
