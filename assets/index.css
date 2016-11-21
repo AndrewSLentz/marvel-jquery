@@ -66,6 +66,7 @@ input {
 
 .hover:hover {
   background: red;
+  cursor: pointer;
 }
 
 
@@ -98,6 +99,10 @@ div.imgbox {
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 255px;;
+}
+
+div.imgbox, div.imgbox-unfound {
+  cursor: alias;
 }
 
 div.imgbox h1 {
