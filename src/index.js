@@ -15,13 +15,13 @@ $(function() {
       var imgboxUnfound = $('<div class="imgbox-unfound"></div>');
       var linker = $('<a href="' + charac.urls[1].url + '"></a>');
       if (charac.thumbnail.path.indexOf('image_not_available') === -1) {
-        imgboxFound.append($('<img class="found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
         imgboxFound.append($('<h1></h1>').text(charac.name));
+        imgboxFound.append($('<img class="found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
         linker.append(imgboxFound)
         group.append(linker);
       } else {
-        imgboxUnfound.append($('<img class="not-found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
         imgboxUnfound.append($('<h1></h1>').text(charac.name));
+        imgboxUnfound.append($('<img class="not-found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
         linker.append(imgboxUnfound)
         group.append(linker);
       }
@@ -64,13 +64,13 @@ $(function() {
         var imgboxUnfound = $('<div class="imgbox-unfound"></div>');
         var linker = $('<a href="' + charac.urls[1].url + '"></a>');
         if (charac.thumbnail.path.indexOf('image_not_available') === -1) {
-          imgboxFound.append($('<img class="found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
           imgboxFound.append($('<h1></h1>').text(charac.name));
+          imgboxFound.append($('<img class="found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
           linker.append(imgboxFound)
           group.append(linker);
         } else {
-          imgboxUnfound.append($('<img class="not-found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
           imgboxUnfound.append($('<h1></h1>').text(charac.name));
+          imgboxUnfound.append($('<img class="not-found">').attr('src', charac.thumbnail.path + '/standard_fantastic.' + charac.thumbnail.extension));
           linker.append(imgboxUnfound)
           group.append(linker);
         }
