@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: "Comic Book";
-  src: url("assets/comic_book/ComicBook.otf");
+  src: url("comic_book/ComicBook.otf");
 }
 @font-face {
   font-family: "Comic Book Bold";
