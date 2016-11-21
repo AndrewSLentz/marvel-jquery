@@ -8,6 +8,15 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Comic Book";
+  src: url("assets/comic_book/ComicBook.otf");
+}
+@font-face {
+  font-family: "Comic Book Bold";
+  src: url("comic_book/ComicBookBold.otf")
+}
+
 body {
   background-color: rgb(222, 0, 0);
 }
