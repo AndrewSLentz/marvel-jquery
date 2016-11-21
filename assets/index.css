@@ -60,13 +60,13 @@ input {
 }
 
 .hover {
-  background: #2c2cff;
+  background: red;
   border-style: ridge;
   outline: none;
 }
 
 .hover:hover {
-  background: red;
+  background: #2c2cff;
   cursor: pointer;
 }
 
