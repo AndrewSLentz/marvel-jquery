@@ -43,7 +43,7 @@ $(function() {
       var page = (hits * ($('#page').val()));
     }
     $.ajax({
-      url: "https://gateway.marvel.com:443/v1/public/characters?" + search + "series=1987%2C%2020432%2C%2020694%2C%20454%2C%2017285%2C%2020432%2C%201126%2C%202234%2C%203101&limit=" + hits + "&offset=" + page + "&apikey=57557432956d182efac5d1ba594e0879",
+      url: "https://gateway.marvel.com:443/v1/public/characters?" + encodeURIComponent(search) + "series=1987%2C%2020432%2C%2020694%2C%20454%2C%2017285%2C%2020432%2C%201126%2C%202234%2C%203101&limit=" + hits + "&offset=" + page + "&apikey=57557432956d182efac5d1ba594e0879",
       crossDomain: true
     }).then(function(characters) {
       var group = $('<div class="group"></div>');
