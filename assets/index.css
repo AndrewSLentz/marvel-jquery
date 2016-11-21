@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgb(222, 0, 0);
 }
@@ -113,4 +122,11 @@ div.imgbox-unfound h1 {
 
 h5 {
   font-family: 'Comic Book';
+  margin-left: 1rem;
+}
+
+label {
+  position: absolute;
+  top: -999999px;
+  left: -999999px;
 }

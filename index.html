@@ -21,17 +21,18 @@
 
 <body>
 
-  <h1 class="top">The World of Spider-Man</h1>
-  <h2>Click a character for more info</h2>
+  <h1 class="top" role="banner">The World of Spider-Man</h1>
+  <h2 role="banner">Click a character for more info</h2>
 
-    <form id="search-options">
-      <input type="text" class="red" id="search" placeholder="Name or first few letters" />
-      <input type="number" class="red" min="1" max="100" id="hits" placeholder="results per page (1-100)" />
-      <input type="number" class="red" min="1" id="page" placeholder="select a page" />
+    <form id="search-options" role="navigation">
+      <label for="search">Type character name or first few letters to search</label><input type="text" class="red" id="search" placeholder="Name or first few letters" role="search" />
+      <label for="hits">Number of results displayed per page</label><input type="number" class="red" min="1" max="100" id="hits" role="navigation" placeholder="results per page (1-100)" />
+      <label for="page">Jump to a page number</label><input type="number" class="red" min="1" id="page" role="navigation" placeholder="select a page" />
       <input type="submit" class="hover" value="load results" />
     </form>
 
-  <div id="characters"></div>
+  <div id="characters" role="main"></div>
+  <div id="attribution" role="contentinfo"></div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="src/index.js"></script>
