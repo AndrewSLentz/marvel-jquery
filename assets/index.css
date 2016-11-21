@@ -55,12 +55,12 @@ input {
 }
 
 .red:focus {
-  background-color: white;
+  background-color: #2c2cff;
   outline: none;
 }
 
 .hover {
-  background: white;
+  background: #2c2cff;
   border-style: ridge;
   outline: none;
 }
