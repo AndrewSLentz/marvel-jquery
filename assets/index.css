@@ -9,12 +9,12 @@ body {
 }
 
 @font-face {
-  font-family: "Comic Book";
-  src: url("comic_book/ComicBook.otf");
+  font-family: 'Comic Book';
+  src: url('comic_book/ComicBook.otf');
 }
 @font-face {
-  font-family: "Comic Book Bold";
-  src: url("comic_book/ComicBookBold.otf")
+  font-family: 'Comic Book Bold';
+  src: url('comic_book/ComicBookBold.otf');
 }
 
 body {
@@ -64,7 +64,7 @@ input {
 }
 
 .red:focus {
-  background-color: #2c2cff;
+  background-color: #2C2CFF;
   outline: none;
 }
 
@@ -75,7 +75,7 @@ input {
 }
 
 .hover:hover {
-  background: #2c2cff;
+  background: #2C2CFF;
   cursor: pointer;
 }
 
@@ -118,15 +118,20 @@ div.imgbox {
 div.imgbox,
 div.imgbox-unfound {
   cursor: alias;
+  position: relative;
 }
 
 div.imgbox h1 {
   align-self: flex-start;
   color: white;
   font-size: large;
+  left: 0;
   margin: 0;
   position: absolute;
+  right: 0;
+  text-align: center;
   -webkit-text-stroke: 1px black;
+  top: 0;
 }
 
 div.imgbox-unfound {
@@ -142,9 +147,13 @@ div.imgbox-unfound h1 {
   align-self: flex-start;
   color: white;
   font-size: large;
+  left: 0;
   margin: 0;
   position: absolute;
+  right: 0;
   -webkit-text-stroke: 1px black;
+  top: 0;
+  text-align: center;
 }
 
 h5 {
